@@ -1,0 +1,120 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5c6ff;
+}
+.container {
+  display: flex;
+  height: 550px;
+  width: 420px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: 0 10px 0 #26235c;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #26235c;
+  overflow: hidden;
+  border-radius: 50%;
+  align-self: self-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* container hover things start */
+.container:hover {
+  height: 550px;
+  width: 420px;
+  background-color: #26235c;
+}
+.container:hover > .icon {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+}
+.container:hover .profile {
+  border-color: #f7df1e #f7df1e #f7df1e #26235c;
+}
+.container:hover .details .name {
+  color: white;
+}
+.container:hover .details .role {
+  color: #7c73b4;
+}
+.container:hover .pare {
+  color: white;
+}
+.container:hover .email {
+  background-color: #7c73b4;
+}
+.container:hover .social > a > i {
+  color: #7c73b4;
+}
+
+/* container end hover */
+.profile {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  margin-top: 0px;
+  border-color: #f7df1e #f7df1e #f7df1e white;
+}
+.profile > img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  outline-style: solid;
+  outline-color: #777599;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+.container > .details > .name {
+  font-family: "Poppins", sans-serif;
+  margin-top: 13px;
+}
+.container > .details > .role {
+  font-family: "Poppins", sans-serif;
+  margin-left: 40px;
+}
+.container > .pare p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+.container > .email {
+  height: 35px;
+  width: 230px;
+  background-color: #26235c;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-spacing-trim: space-first;
+}
+.container > .social {
+  margin-right: 20px;
+}
+.container > .social > a > i {
+  margin-top: 33px;
+  padding-left: 25px;
+  font-size: xx-large;
+  color: #26235c;
+}
